@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.board {
+  height: 150px;
+  margin: 2rem auto;
+  width: 150px;
+  font-size: 0;
+  border: 1px solid #000;
+}
+
+.cell {
+  background-color: aliceblue;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  font-size: 0;
+}
+
+[data-game-session="true"] .cell[data-player="0"]:hover {
+  cursor: pointer;
+  background-color: beige;
+}
+
+.cell[data-player="1"],
+.p1 p:after {
+  background-color: #fff;
+}
+
+.cell[data-player="2"],
+.p2 p:after {
+  background-color: #000;
+}
+
+.legend p:after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #000;
+  vertical-align: top;
+}
